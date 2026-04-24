@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+/* Font family part start  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Font family part end  */
+
+/* Break-point part Start  */
+@theme {
+    --breakpoint-*: initial;
+    --breakpoint-sm: 480px;
+    --breakpoint-mg: 720px;
+    --breakpoint-lg: 1080px;
+    --breakpoint-xl: 1170px;
+    --font-inter: "Inter", sans-serif;
+}
+/* Break-point part End */
+
+/* Custom utilities Start */
+
+@utility container {
+    margin: 0 auto;
+}
+
+@utility btn {
+    @apply py-5 px-13.5 bg-white text-[#000000] rounded-full;
+}
+
+@utility h3_footer {
+    @apply text-[24px] leading-6 font-semibold text-[#FFFFFF] pb-[30px] ;
+}
+
+h2{
+    @apply font-bold text-[50px] leading-17.5 text-center;
+}
+
+.menu_li li {
+    @apply cursor-pointer py-2 px-5 font-bold; 
+}
+
+.menu_li li:hover{
+    @apply border-b-4 border-white rounded-[10px]; 
+    
+}
+footer li {
+    @apply text-[18px] leading-[18px] text-[#FFFFFF] cursor-pointer py-3;
+}
+
+
+/* Custom utilities End*/
+
+/* Card headers start */
+@utility h3_card{
+    @apply font-bold text-[24px] leading-8.5 text-[#FFFFFF];
+}
+
+@utility h2_count{
+    @apply font-bold text-[56px] leading-[66px] text-center text-[#FFFFFF];
+}
+
+@utility p_count{
+    @apply text-[18px] leading-[30px] text-[#FFFFFF] text-center;
+}
+
+@utility p_franchisee{
+    @apply text-[20px] leading-[30px] text-[#FFFFFF] text-center;
+}
+
+@utility p_card{
+    @apply text-[16px] leading-6.5 text-[#FFFFFF];  
+}
+
+@utility menu_card{
+    @apply w-92.5 bg-[#191919] p-5 items-center rounded-xl;
+}
+
+@utility client_rv_card{
+    @apply w-92.5 bg-[#191919] p-7.5 items-center rounded-xl;
+}
+
+@utility h3_clint_title{
+    @apply font-bold text-[18px] leading-7 text-[#FFFFFF];
+}
+@utility p_clint_title{
+    @apply text-[14px] leading-5.5 text-[#FFFFFF] pb-2;
+}
+
+@utility p_clint_comment{
+    @apply text-[18px] font-medium leading-7 text-[#FFFFFF] pb-2 text-justify;
+}
+
+/* Card headers end */
+
+
+/* Custom utilities End */
+
+/* Nav custom Start */
+nav li {
+    @apply leading-5;
+}
+
+/* Nav custom End */
